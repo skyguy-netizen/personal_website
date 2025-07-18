@@ -22,7 +22,7 @@ const Skills = () => {
     setShuffledSkills(shuffledArray);
   }, []);
 
-  const sliders = Array.from({ length: 3 }, (_, index) => {
+  const sliders = Array.from({ length: 1 }, (_, index) => {
     const sliderSkills = [...shuffledSkills].sort(() => Math.random() - 0.5);
     return (
       <InfiniteLoopSlider key={index} isReverse={index === 1}>

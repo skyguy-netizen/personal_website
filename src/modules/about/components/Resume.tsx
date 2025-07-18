@@ -4,7 +4,8 @@ import { LuDownload as DownloadIcon } from 'react-icons/lu';
 import GoogleDocsEmbed from '@/common/components/elements/GoogleDocsEmbed';
 
 const Resume = () => {
-  const RESUME_URL = 'https://bit.ly/cv-aulianza';
+  const RESUME_URL =
+    'https://drive.google.com/file/d/1W-MgZpIIQEep7CJYw-rbkQhyCuK6mJa4/view';
 
   return (
     <div className='space-y-5'>
@@ -16,10 +17,16 @@ const Resume = () => {
         data-umami-event='Download Resume'
       >
         <DownloadIcon />
-        <span>Download Resume & Template</span>
+        <span>Download Resume</span>
       </Link>
 
-      <GoogleDocsEmbed src='https://docs.google.com/document/d/1Ug6V5cI9D3hBPD8t5qrsvC3Zr2H1-EKlu4I_q7fcigw/edit' />
+      <iframe
+        src='https://drive.google.com/file/d/1W-MgZpIIQEep7CJYw-rbkQhyCuK6mJa4/preview'
+        width='100%'
+        height='1000'
+        allow='autoplay'
+      ></iframe>
+      {/* <GoogleDocsEmbed src='https://docs.google.com/document/d/1Ug6V5cI9D3hBPD8t5qrsvC3Zr2H1-EKlu4I_q7fcigw/edit' /> */}
     </div>
   );
 };

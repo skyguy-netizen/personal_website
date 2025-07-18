@@ -40,16 +40,18 @@ const ProjectsPage: NextPage<ProjectsPageProps> = ({ projects }) => {
 export default ProjectsPage;
 
 export const getStaticProps: GetStaticProps = async () => {
-  const response = await prisma.projects.findMany({
-    orderBy: [
-      {
-        is_featured: 'desc',
-      },
-      {
-        updated_at: 'desc',
-      },
-    ],
-  });
+  // const response = await prisma.projects.findMany({
+  //   orderBy: [
+  //     {
+  //       is_featured: 'desc',
+  //     },
+  //     {
+  //       updated_at: 'desc',
+  //     },
+  //   ],
+  // });
+
+  const response = ['Solar Car', 'CarlaVR Streaming', '1', '2', '4', '56'];
 
   return {
     props: {

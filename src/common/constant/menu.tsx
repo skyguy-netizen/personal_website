@@ -15,6 +15,18 @@ import {
   FiRss as BlogIcon,
   FiUser as ProfileIcon,
 } from 'react-icons/fi';
+
+import {
+  HiOutlineAcademicCap as EducationIcon,
+  HiOutlineBookmark as AboutIcon,
+  HiOutlineBriefcase as CareerIcon,
+  HiOutlineDocumentText as ResumeIcon,
+  HiOun,
+} from 'react-icons/hi';
+
+// import { BsBuildings as CompanyIcon } from 'react-icons/bs';
+// import { IoSchool } from 'react-icons/io5';
+
 import { PiChatCircleDotsBold as ChatIcon } from 'react-icons/pi';
 import { SiJavascript } from 'react-icons/si';
 
@@ -33,48 +45,75 @@ export const MENU_ITEMS: MenuItemProps[] = [
     type: 'Pages',
   },
   {
-    title: 'Dashboard',
-    href: '/dashboard',
-    icon: <DashboardIcon size={iconSize} />,
+    title: 'Education',
+    href: '/education',
+    icon: <EducationIcon size={iconSize} />,
     isShow: true,
     isExternal: false,
-    eventName: 'Pages: Dashboard',
+    eventName: 'Pages: Home',
     type: 'Pages',
   },
   {
-    title: 'Projects',
-    href: '/projects',
-    icon: <ProjectIcon size={iconSize} />,
-    isShow: true,
-    isExternal: false,
-    eventName: 'Pages: Projects',
-    type: 'Pages',
-  },
-  {
-    title: 'Blog',
-    href: '/blog',
-    icon: <BlogIcon size={iconSize} />,
-    isShow: true,
-    isExternal: false,
-    eventName: 'Pages: Blog',
-    type: 'Pages',
-  },
-  {
-    title: 'Learn',
-    href: '/learn',
-    icon: <LearnIcon size={iconSize} />,
-    isShow: true,
-    isExternal: false,
-    eventName: 'Pages: Learn',
-    type: 'Pages',
-  },
-  {
-    title: 'About',
-    href: '/about',
-    icon: <ProfileIcon size={iconSize} />,
+    title: 'Career',
+    href: '/career',
+    icon: <CareerIcon size={iconSize} />,
     isShow: true,
     isExternal: false,
     eventName: 'Pages: About',
+    type: 'Pages',
+  },
+  {
+    title: 'Volunteering',
+    href: '/volunteering',
+    icon: <ProjectIcon size={iconSize} />,
+    isShow: true,
+    isExternal: false,
+    eventName: 'Pages: Volunteering',
+    type: 'Pages',
+  },
+  // {
+  //   title: 'Blog',
+  //   href: '/blog',
+  //   icon: <BlogIcon size={iconSize} />,
+  //   isShow: false,
+  //   isExternal: false,
+  //   eventName: 'Pages: Blog',
+  //   type: 'Pages',
+  // },
+  // {
+  //   title: 'Learn',
+  //   href: '/learn',
+  //   icon: <LearnIcon size={iconSize} />,
+  //   isShow: false,
+  //   isExternal: false,
+  //   eventName: 'Pages: Learn',
+  //   type: 'Pages',
+  // },
+  // {
+  //   title: 'About',
+  //   href: '/about',
+  //   icon: <ProfileIcon size={iconSize} />,
+  //   isShow: true,
+  //   isExternal: false,
+  //   eventName: 'Pages: About',
+  //   type: 'Pages',
+  // },
+  {
+    title: 'Resume',
+    href: '/resume',
+    icon: <ResumeIcon size={iconSize} />,
+    isShow: true,
+    isExternal: false,
+    eventName: 'Pages: Github Stats',
+    type: 'Pages',
+  },
+  {
+    title: 'Github Stats',
+    href: '/stats',
+    icon: <DashboardIcon size={iconSize} />,
+    isShow: true,
+    isExternal: false,
+    eventName: 'Pages: Github Stats',
     type: 'Pages',
   },
   {
@@ -86,33 +125,33 @@ export const MENU_ITEMS: MenuItemProps[] = [
     eventName: 'Pages: Contact',
     type: 'Pages',
   },
-  {
-    title: 'Guestbook',
-    href: '/guestbook',
-    icon: <ChatIcon size={iconSize} />,
-    isShow: true,
-    isExternal: false,
-    eventName: 'Pages: Chat',
-    type: 'Pages',
-  },
+  // {
+  //   title: 'Guestbook',
+  //   href: '/guestbook',
+  //   icon: <ChatIcon size={iconSize} />,
+  //   isShow: false,
+  //   isExternal: false,
+  //   eventName: 'Pages: Chat',
+  //   type: 'Pages',
+  // },
 ];
 
-export const MENU_APPS: MenuItemProps[] = [
-  {
-    title: 'JS Playground',
-    href: '/playground',
-    icon: <SiJavascript size={iconSize} />,
-    isShow: true,
-    isExternal: false,
-    eventName: 'Pages: Playground',
-    type: 'Pages',
-  },
-];
+// export const MENU_APPS: MenuItemProps[] = [
+//   {
+//     title: 'JS Playground',
+//     href: '/playground',
+//     icon: <SiJavascript size={iconSize} />,
+//     isShow: false,
+//     isExternal: false,
+//     eventName: 'Pages: Playground',
+//     type: 'Pages',
+//   },
+// ];
 
 export const SOCIAL_MEDIA: MenuItemProps[] = [
   {
     title: 'Email',
-    href: 'mailto:aulianza.dev@gmail.com',
+    href: 'mailto:aaravtennis@gmail.com',
     icon: <EmailIcon size={iconSize} />,
     isShow: true,
     isExternal: true,
@@ -123,7 +162,7 @@ export const SOCIAL_MEDIA: MenuItemProps[] = [
 
   {
     title: 'Linkedin',
-    href: 'https://www.linkedin.com/in/aulianza/',
+    href: 'https://www.linkedin.com/in/aarav-sane/',
     icon: <LinkedinIcon size={iconSize} />,
     isShow: true,
     isExternal: true,
@@ -133,9 +172,9 @@ export const SOCIAL_MEDIA: MenuItemProps[] = [
   },
   {
     title: 'Twitter',
-    href: 'https://twitter.com/aulianzaa',
+    href: 'https://x.com/agsane8108?s=09',
     icon: <TwitterIcon size={iconSize} />,
-    isShow: true,
+    isShow: false,
     isExternal: true,
     eventName: 'Social: Twitter',
     className: '!bg-sky-500 border border dark:border-neutral-700',
@@ -143,7 +182,7 @@ export const SOCIAL_MEDIA: MenuItemProps[] = [
   },
   {
     title: 'Instagram',
-    href: 'https://instagram.com/aulianza',
+    href: 'https://instagram.com/aarav_sane',
     icon: <InstagramIcon size={iconSize} />,
     isShow: true,
     isExternal: true,
@@ -153,7 +192,7 @@ export const SOCIAL_MEDIA: MenuItemProps[] = [
   },
   {
     title: 'Github',
-    href: 'https://github.com/aulianza',
+    href: 'https://github.com/skyguy-netizen',
     icon: <GithubIcon size={iconSize} />,
     isShow: true,
     isExternal: true,
@@ -163,14 +202,14 @@ export const SOCIAL_MEDIA: MenuItemProps[] = [
   },
 ];
 
-export const EXTERNAL_LINKS: MenuItemProps[] = [
-  {
-    title: 'Analytics',
-    href: 'https://analytics.aulianza.com/share/LK5kiRuosw9pORLa/aulianza.id',
-    icon: <AnalyticsIcon size={iconSize} />,
-    isShow: true,
-    isExternal: true,
-    eventName: 'External Link: Analytics',
-    type: 'Link',
-  },
-];
+// export const EXTERNAL_LINKS: MenuItemProps[] = [
+//   {
+//     title: 'Analytics',
+//     href: 'https://analytics.aulianza.com/share/LK5kiRuosw9pORLa/aulianza.id',
+//     icon: <AnalyticsIcon size={iconSize} />,
+//     isShow: false,
+//     isExternal: true,
+//     eventName: 'External Link: Analytics',
+//     type: 'Link',
+//   },
+// ];
