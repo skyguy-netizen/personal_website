@@ -3,7 +3,7 @@ module.exports = {
   rules: {
     'type-enum': [
       2,
-      'always',
+      'never',
       [
         'feat',
         'fix',
