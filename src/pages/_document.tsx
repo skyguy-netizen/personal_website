@@ -7,7 +7,7 @@ export default function Document() {
         <script
           async
           defer
-          src='https://analytics.aulianza.com/script.js'
+          src='https://analytics.skyguy8108.com/script.js'
           data-website-id='5a78190a-bdad-48a4-901a-c7400be41ca6'
         ></script>
         <link

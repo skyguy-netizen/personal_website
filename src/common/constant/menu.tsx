@@ -12,23 +12,18 @@ import {
   FiCpu as DashboardIcon,
   FiPieChart as AnalyticsIcon,
   FiPocket as HomeIcon,
-  FiRss as BlogIcon,
   FiUser as ProfileIcon,
+  FiCamera as PhotoIcon,
 } from 'react-icons/fi';
 
 import {
   HiOutlineAcademicCap as EducationIcon,
-  HiOutlineBookmark as AboutIcon,
   HiOutlineBriefcase as CareerIcon,
   HiOutlineDocumentText as ResumeIcon,
-  HiOun,
 } from 'react-icons/hi';
 
 // import { BsBuildings as CompanyIcon } from 'react-icons/bs';
 // import { IoSchool } from 'react-icons/io5';
-
-import { PiChatCircleDotsBold as ChatIcon } from 'react-icons/pi';
-import { SiJavascript } from 'react-icons/si';
 
 import { MenuItemProps } from '../types/menu';
 
@@ -71,51 +66,33 @@ export const MENU_ITEMS: MenuItemProps[] = [
     eventName: 'Pages: Volunteering',
     type: 'Pages',
   },
-  // {
-  //   title: 'Blog',
-  //   href: '/blog',
-  //   icon: <BlogIcon size={iconSize} />,
-  //   isShow: false,
-  //   isExternal: false,
-  //   eventName: 'Pages: Blog',
-  //   type: 'Pages',
-  // },
-  // {
-  //   title: 'Learn',
-  //   href: '/learn',
-  //   icon: <LearnIcon size={iconSize} />,
-  //   isShow: false,
-  //   isExternal: false,
-  //   eventName: 'Pages: Learn',
-  //   type: 'Pages',
-  // },
-  // {
-  //   title: 'About',
-  //   href: '/about',
-  //   icon: <ProfileIcon size={iconSize} />,
-  //   isShow: true,
-  //   isExternal: false,
-  //   eventName: 'Pages: About',
-  //   type: 'Pages',
-  // },
   {
     title: 'Resume',
     href: '/resume',
     icon: <ResumeIcon size={iconSize} />,
     isShow: true,
     isExternal: false,
-    eventName: 'Pages: Github Stats',
+    eventName: 'Pages: Resume',
     type: 'Pages',
   },
-  {
-    title: 'Github Stats',
-    href: '/stats',
-    icon: <DashboardIcon size={iconSize} />,
-    isShow: true,
-    isExternal: false,
-    eventName: 'Pages: Github Stats',
-    type: 'Pages',
-  },
+  // {
+  //   title: 'Github Stats',
+  //   href: '/stats',
+  //   icon: <DashboardIcon size={iconSize} />,
+  //   isShow: true,
+  //   isExternal: false,
+  //   eventName: 'Pages: Github Stats',
+  //   type: 'Pages',
+  // },
+  // {
+  //   title: 'Images',
+  //   href: '/images',
+  //   icon: <PhotoIcon size={iconSize} />,
+  //   isShow: true,
+  //   isExternal: false,
+  //   eventName: 'Pages: Images',
+  //   type: 'Pages',
+  // },
   {
     title: 'Contact',
     href: '/contact',
@@ -125,28 +102,7 @@ export const MENU_ITEMS: MenuItemProps[] = [
     eventName: 'Pages: Contact',
     type: 'Pages',
   },
-  // {
-  //   title: 'Guestbook',
-  //   href: '/guestbook',
-  //   icon: <ChatIcon size={iconSize} />,
-  //   isShow: false,
-  //   isExternal: false,
-  //   eventName: 'Pages: Chat',
-  //   type: 'Pages',
-  // },
 ];
-
-// export const MENU_APPS: MenuItemProps[] = [
-//   {
-//     title: 'JS Playground',
-//     href: '/playground',
-//     icon: <SiJavascript size={iconSize} />,
-//     isShow: false,
-//     isExternal: false,
-//     eventName: 'Pages: Playground',
-//     type: 'Pages',
-//   },
-// ];
 
 export const SOCIAL_MEDIA: MenuItemProps[] = [
   {
@@ -201,15 +157,3 @@ export const SOCIAL_MEDIA: MenuItemProps[] = [
     type: 'Link',
   },
 ];
-
-// export const EXTERNAL_LINKS: MenuItemProps[] = [
-//   {
-//     title: 'Analytics',
-//     href: 'https://analytics.aulianza.com/share/LK5kiRuosw9pORLa/aulianza.id',
-//     icon: <AnalyticsIcon size={iconSize} />,
-//     isShow: false,
-//     isExternal: true,
-//     eventName: 'External Link: Analytics',
-//     type: 'Link',
-//   },
-// ];
