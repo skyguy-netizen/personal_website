@@ -5,12 +5,15 @@ import {
   HiOutlineDocumentText as ResumeIcon,
 } from 'react-icons/hi';
 
+import { MdVolunteerActivism } from 'react-icons/md';
+
 import { Tabs } from '@/common/components/elements/Tabs';
 
 import CareerList from './CareerList';
 import EducationList from './EducationList';
 import Resume from './Resume';
 import Story from './Story';
+import VolunteeringList from './VolunteeringList';
 
 const About = () => {
   const TABS = [
@@ -37,6 +40,14 @@ const About = () => {
         </TabLabel>
       ),
       children: <CareerList />,
+    },
+    {
+      label: (
+        <TabLabel>
+          <MdVolunteerActivism size={17} /> Volunteering
+        </TabLabel>
+      ),
+      children: <VolunteeringList />,
     },
     {
       label: (

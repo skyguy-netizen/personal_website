@@ -10,7 +10,6 @@ import {
 } from 'react-icons/md';
 
 import { MENU_ITEMS } from '@/common/constant/menu';
-import { CommandPaletteContext } from '@/common/context/CommandPaletteContext';
 
 import Image from '../../elements/Image';
 import ThemeToggleButton from '../../elements/ThemeToggleButton';
@@ -18,7 +17,6 @@ import Tooltip from '../../elements/Tooltip';
 import Profile from '../../sidebar/Profile';
 
 const HeaderTop = () => {
-  const { setIsOpen } = useContext(CommandPaletteContext);
   const [showMenu, setShowMenu] = useState(false);
 
   const router = useRouter();
@@ -32,8 +30,8 @@ const HeaderTop = () => {
       <div className='mx-8 hidden items-center justify-between gap-5 py-8 lg:flex'>
         <div className='flex items-center gap-5'>
           <Image
-            src='/images/aulianza-new.png'
-            alt='Ryan Aulia'
+            src='/images/aarav.jpeg'
+            alt='Aarav Sane'
             width={40}
             height={40}
             rounded='rounded-full'
@@ -43,7 +41,7 @@ const HeaderTop = () => {
             <div className='flex items-center gap-3'>
               <Link href='/' passHref>
                 <h2 className='flex-grow  text-lg font-medium lg:text-xl'>
-                  Ryan Aulia
+                  Aarav Sane
                 </h2>
               </Link>
               <Tooltip title='Verified'>
@@ -80,11 +78,11 @@ const HeaderTop = () => {
           {!showMenu && (
             <>
               <ThemeToggleButton />
-              <CommandIcon
+              {/* <CommandIcon
                 onClick={() => setIsOpen(true)}
                 className='cursor-pointer'
                 size={20}
-              />
+              /> */}
             </>
           )}
 

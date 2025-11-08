@@ -3,21 +3,18 @@ export const ABOUT = `
     Hello! Thanks for stopping by my personal website.
 </p>
 <p>
-    I'm Ryan. I've been working in web development for over 10 years, doing both the coding you see on the screen (frontend) and the stuff that happens behind the scenes (backend). I know how to manage projects using methods like Waterfall and Agile. But what really gets me excited is making websites and apps that are easy for everyone to use and look good too!
+    I'm Aarav Sane, a Computer Science Doctorate Student at Purdue University with a deep passion for Machine Learning and Artificial Intelligence. My journey in computer science has been driven by curiosity and a desire to push the boundaries of what's possible with AI.
 </p>
 <p>
-    I'm really into JavaScript and PHP, which are languages used to build websites. I also know a bunch of frameworks that make building websites even easier, like React, Vue, Angular, Node.js, and PHP frameworks like Codeigniter and Laravel. I love learning about new web tools and features.
+    Before pursuing my doctorate, I completed my Bachelor of Science degree at the University of California, Riverside, where I not only excelled academically but also had the honor of playing and captaining the NCAA Division I tennis team. This experience taught me the value of discipline, teamwork, and perseverance—qualities that I bring to my research and academic work.
 </p>
 <p>
-    In my career, I've led teams to build software for a wide range of companies, from large corporations to innovative startups.
+    My research interests span across various domains of machine learning, including deep learning for computer vision, natural language processing, reinforcement learning, and federated learning systems. I'm particularly fascinated by how we can make AI systems more efficient, interpretable, and accessible while maintaining high performance.
 </p>
 <p>
-    I believe that good communication is super important in any job.
+    When I'm not working on research or coding, you might find me on a tennis court, exploring new technologies, or diving into the latest papers in machine learning. I believe that the best solutions come from interdisciplinary thinking and collaboration.
 </p>
 <p>
-    I'm good at adapting to different situations, working efficiently, and always trying to do my best. My experience has taught me how to solve problems and lead teams, but I'm also happy to work with others to get things done. I'm excited about the chance to work together and make cool stuff!
-</p>
-<p>
-    I'm looking forward to the possibility of working with you!
+    I'm always open to discussing research, potential collaborations, or just chatting about AI and technology. Feel free to reach out!
 </p>
 `;

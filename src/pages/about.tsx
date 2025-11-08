@@ -6,13 +6,12 @@ import PageHeading from '@/common/components/elements/PageHeading';
 import About from '@/modules/about';
 
 const PAGE_TITLE = 'About';
-const PAGE_DESCRIPTION =
-  'An insightful glimpse into who I am – because every detail adds depth to the canvas of life.';
+const PAGE_DESCRIPTION = 'Just a simple man, making my through the galaxy :)';
 
 const AboutPage: NextPage = () => {
   return (
     <>
-      <NextSeo title={`${PAGE_TITLE} - Ryan Aulia`} />
+      <NextSeo title={`${PAGE_TITLE} - Aarav Sane`} />
       <Container data-aos='fade-up'>
         <PageHeading title={PAGE_TITLE} description={PAGE_DESCRIPTION} />
         <About />
