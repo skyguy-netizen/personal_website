@@ -9,8 +9,6 @@ import ChatButton from '@/modules/chat/components/ChatButton';
 
 import HeaderSidebar from './header/HeaderSidebar';
 import HeaderTop from './header/HeaderTop';
-import NowPlayingBar from '../elements/NowPlayingBar';
-import NowPlayingCard from '../elements/NowPlayingCard';
 
 // import TopBar from '../elements/TopBar';
 
@@ -61,8 +59,7 @@ const Layout = ({ children }: LayoutProps) => {
           </div>
         )}
       </div>
-      {isShowChatButton && <ChatButton />}
-      {isMobile ? <NowPlayingCard /> : <NowPlayingBar />}
+      {/* {isShowChatButton && <ChatButton />} */}
     </>
   );
 };

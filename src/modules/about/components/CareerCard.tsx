@@ -73,10 +73,16 @@ const CareerCard = ({
                   {company}
                 </span>
               </a>
-              <span className='hidden text-neutral-300 dark:text-neutral-700 lg:block'>
-                •
-              </span>
-              <span className='text-neutral-500'>[ {company_legal_name} ]</span>
+              {company_legal_name && (
+                <>
+                  <span className='hidden text-neutral-300 dark:text-neutral-700 lg:block'>
+                    •
+                  </span>
+                  <span className='text-neutral-500'>
+                    [ {company_legal_name} ]
+                  </span>
+                </>
+              )}
               <span className='hidden text-neutral-300 dark:text-neutral-700 lg:block'>
                 •
               </span>
@@ -105,35 +111,39 @@ const CareerCard = ({
             </div>
           </div>
         </div>
-        <button
-          onClick={() => setIsShowResponsibility(!isShowResponsibility)}
-          className='-ml-1 mt-5 flex items-center gap-1 text-sm text-neutral-500'
-        >
-          <HiChevronRight
-            size={18}
-            className={cn({
-              'rotate-90 transition-all duration-300': isShowResponsibility,
-            })}
-          />
-          {isShowResponsibility ? 'Hide' : 'Show'} Responsibilities
-        </button>
-        <AnimatePresence>
-          {isShowResponsibility && (
-            <motion.ul
-              className='ml-5 list-disc space-y-1 pb-2 text-sm leading-normal text-neutral-600 dark:text-neutral-400'
-              initial={{ y: -20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: -20, opacity: 0 }}
-              transition={{ duration: 0.3, ease: 'easeInOut' }}
+        {responsibilities && responsibilities.length > 0 && (
+          <>
+            <button
+              onClick={() => setIsShowResponsibility(!isShowResponsibility)}
+              className='-ml-1 mt-5 flex items-center gap-1 text-sm text-neutral-500'
             >
-              {responsibilities?.map((item) => (
-                <motion.li key={item} layout>
-                  {item}
-                </motion.li>
-              ))}
-            </motion.ul>
-          )}
-        </AnimatePresence>
+              <HiChevronRight
+                size={18}
+                className={cn({
+                  'rotate-90 transition-all duration-300': isShowResponsibility,
+                })}
+              />
+              {isShowResponsibility ? 'Hide' : 'Show'} Responsibilities
+            </button>
+            <AnimatePresence>
+              {isShowResponsibility && (
+                <motion.ul
+                  className='ml-5 list-disc space-y-1 pb-2 text-sm leading-normal text-neutral-600 dark:text-neutral-400'
+                  initial={{ y: -20, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  exit={{ y: -20, opacity: 0 }}
+                  transition={{ duration: 0.3, ease: 'easeInOut' }}
+                >
+                  {responsibilities.map((item) => (
+                    <motion.li key={item} layout>
+                      {item}
+                    </motion.li>
+                  ))}
+                </motion.ul>
+              )}
+            </AnimatePresence>
+          </>
+        )}
       </div>
     </Card>
   );

@@ -65,10 +65,6 @@ A no-fuss pure JavaScript playground with a live feedback loop.
 
 Realtime guestbook chat is powered by Firebase. Anyone can leave me a message in this website.
 
-- ### 🎧 Spotify Status
-
-Displays song information being played on spotify in real time using the Spotify API and SWR.
-
 - ### 🕗 Wakatime Statistics
 
 Data is retrieved using the Wakatime API and then displayed on the dashboard, built with Next.js API routes deployed as serverless functions.
@@ -136,7 +132,7 @@ yarn install
 
 ### 3. Config .env
 
-This repository uses several environment variables. Please copy .env.example into .env, then fill in the values with your own. For third-party environment variables such as Spotify, Wakatime, Firebase, and others, please refer to the official documentation provided by each provider.
+This repository uses several environment variables. Please copy .env.example into .env, then fill in the values with your own. For third-party environment variables such as Wakatime, Firebase, and others, please refer to the official documentation provided by each provider.
 
 ```
 BUNDLE_ANALYZER=false
@@ -151,10 +147,6 @@ OPENAI_API_KEY=
 # DEV.to
 DEVTO_KEY=
 
-# Spotify
-SPOTIFY_CLIENT_ID=
-SPOTIFY_CLIENT_SECRET=
-SPOTIFY_REFRESH_TOKEN=
 
 # WakaTime
 WAKATIME_API_KEY=
@@ -182,8 +174,15 @@ NEXT_PUBLIC_FIREBASE_CHAT_DB=
 
 # Next-Auth SSO
 NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=
 GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
+GITHUB_ID=
+GITHUB_SECRET=
+
+# News API (for "In the News" section)
+# Get your free API key from https://newsapi.org/
+NEWS_API_KEY=
 ```
 
 ### 4. Run the development server

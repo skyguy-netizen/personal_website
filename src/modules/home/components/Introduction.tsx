@@ -6,22 +6,32 @@ const Introduction = () => {
           <h1>Hello there - I&apos;m Aarav</h1>{' '}
           <div className='ml-1 animate-waving-hand'>👋</div>
         </div>
-        {/* <div className='space-y-4'>
-          <ul className='ml-5 flex list-disc flex-col gap-1 text-neutral-700 dark:text-neutral-400 lg:flex-row lg:gap-10'>
-            <li>
-              Based in Jakarta, Indonesia <span className='ml-1'>🇮🇩</span>
-            </li>
-            <li>Working remotely</li>
-          </ul>
-        </div> */}
       </div>
 
       <p className='mt-6 leading-[1.8] text-neutral-800 dark:text-neutral-300 md:leading-loose'>
         I'm currently a Computer Science Doctorate Student at Purdue University
-        with an interest in Machine Learning/Artifical Intelligence. I
+        under the guidance of{' '}
+        <a
+          href='https://www.cs.purdue.edu/homes/ayg/'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='text-blue-600 hover:underline dark:text-blue-400'
+        >
+          Dr. Ananth Grama
+        </a>
+        and{' '}
+        <a
+          href='https://www.rohanpaleja.com/'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='text-blue-600 hover:underline dark:text-blue-400'
+        >
+          Dr. Rohan Paleja
+        </a>{' '}
+        , with an interest in Machine Learning and Artificial Intelligence. I
         previously completed my Bachelor of Science degree from University of
         California, Riverside, where I also played and captained the NCAA D1
-        tennis team
+        tennis team.
       </p>
     </section>
   );

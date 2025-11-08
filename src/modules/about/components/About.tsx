@@ -3,7 +3,6 @@ import {
   HiOutlineBookmark as AboutIcon,
   HiOutlineBriefcase as CareerIcon,
   HiOutlineDocumentText as ResumeIcon,
-  HiOun,
 } from 'react-icons/hi';
 
 import { MdVolunteerActivism } from 'react-icons/md';
