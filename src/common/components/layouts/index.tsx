@@ -5,12 +5,10 @@ import { ReactNode } from 'react';
 import { useWindowSize } from 'usehooks-ts';
 
 import useHasMounted from '@/common/hooks/useHasMounted';
-import ChatButton from '@/modules/chat/components/ChatButton';
+import CreditButton from '@/common/components/elements/CreditButton';
 
 import HeaderSidebar from './header/HeaderSidebar';
 import HeaderTop from './header/HeaderTop';
-
-// import TopBar from '../elements/TopBar';
 
 interface LayoutProps {
   children: ReactNode;
@@ -38,7 +36,6 @@ const Layout = ({ children }: LayoutProps) => {
 
   return (
     <>
-      {/* <TopBar /> */}
       <div
         className={clsx(
           'mx-auto max-w-6xl',
@@ -59,6 +56,7 @@ const Layout = ({ children }: LayoutProps) => {
           </div>
         )}
       </div>
+      <CreditButton />
       {/* {isShowChatButton && <ChatButton />} */}
     </>
   );

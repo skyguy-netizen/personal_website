@@ -18,7 +18,7 @@ const Introduction = () => {
           className='text-blue-600 hover:underline dark:text-blue-400'
         >
           Dr. Ananth Grama
-        </a>
+        </a>{' '}
         and{' '}
         <a
           href='https://www.rohanpaleja.com/'
@@ -27,11 +27,11 @@ const Introduction = () => {
           className='text-blue-600 hover:underline dark:text-blue-400'
         >
           Dr. Rohan Paleja
-        </a>{' '}
-        , with an interest in Machine Learning and Artificial Intelligence. I
-        previously completed my Bachelor of Science degree from University of
-        California, Riverside, where I also played and captained the NCAA D1
-        tennis team.
+        </a>
+        , with an interest in Multi Agent Reinforcement Learning and ML/DL in
+        Biosciences. I previously completed my Bachelor of Science degree from
+        University of California, Riverside, where I also played and captained
+        the NCAA D1 tennis team.
       </p>
     </section>
   );

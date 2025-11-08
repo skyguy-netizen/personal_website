@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import useIsMobile from '@/common/hooks/useIsMobile';
 
 import Breakline from '../../elements/Breakline';
-import SearchBox from '../../elements/SearchBox';
+// import SearchBox from '../../elements/SearchBox';
 import ThemeSwitcher from '../../elements/ThemeSwitcher';
 import Navigation from '../../sidebar/Navigation';
 import Profile from '../../sidebar/Profile';
@@ -35,9 +35,6 @@ const Sidebar = () => {
       <Profile isScrolled={isScrolled} />
       {!isMobile && (
         <div className='space-y-3'>
-          <div className='pb-1'>
-            <SearchBox />
-          </div>
           <Navigation />
           <Breakline className='mx-1' />
           <div className='space-y-2.5 px-1'>

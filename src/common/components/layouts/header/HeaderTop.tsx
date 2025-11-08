@@ -10,7 +10,6 @@ import {
 } from 'react-icons/md';
 
 import { MENU_ITEMS } from '@/common/constant/menu';
-import { CommandPaletteContext } from '@/common/context/CommandPaletteContext';
 
 import Image from '../../elements/Image';
 import ThemeToggleButton from '../../elements/ThemeToggleButton';
@@ -18,7 +17,6 @@ import Tooltip from '../../elements/Tooltip';
 import Profile from '../../sidebar/Profile';
 
 const HeaderTop = () => {
-  const { setIsOpen } = useContext(CommandPaletteContext);
   const [showMenu, setShowMenu] = useState(false);
 
   const router = useRouter();
@@ -80,11 +78,11 @@ const HeaderTop = () => {
           {!showMenu && (
             <>
               <ThemeToggleButton />
-              <CommandIcon
+              {/* <CommandIcon
                 onClick={() => setIsOpen(true)}
                 className='cursor-pointer'
                 size={20}
-              />
+              /> */}
             </>
           )}
 
