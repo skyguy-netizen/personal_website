@@ -3,11 +3,11 @@
 
 ## About
 
-This template was forked from [aulianza's personal website](https://github.com/aulanza/aulianza.id). I do not claim credit for the designs - I'm merely using the template to showcase my work. Please check out his amazing work [here](https://github.com/aulanza/aulianza.id)!
+This template was forked from [aulianza's personal website](https://github.com/aulianza/aulianza.id). I do not claim credit for the designs - I'm merely using the template to showcase my work. Please check out his amazing work [here](https://github.com/aulianza/aulianza.id)!
 
 ## Credits
 
-All credit for the design and initial implementation goes to [aulianza](https://github.com/aulanza). This is a personal adaptation of their work.
+All credit for the design and initial implementation goes to [aulianza](https://github.com/aulianza). This is a personal adaptation of their work.
 
 ## License
 
