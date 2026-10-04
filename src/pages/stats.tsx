@@ -5,7 +5,6 @@ import { SWRConfig } from 'swr';
 import Container from '@/common/components/elements/Container';
 import PageHeading from '@/common/components/elements/PageHeading';
 import Dashboard from '@/modules/dashboard';
-import { getGithubUser } from '@/services/github';
 
 interface DashboardPageProps {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -30,26 +29,12 @@ const DashboardPage: NextPage<DashboardPageProps> = ({ fallback }) => {
 
 export default DashboardPage;
 
+// Live stats are disabled for now (GitHub token expired).
+// To re-enable, restore the getGithubUser call below.
 export const getStaticProps: GetStaticProps = async () => {
-  try {
-    // const readStats = await getReadStats();
-    const githubUserPersonal = await getGithubUser('personal');
-
-    return {
-      props: {
-        fallback: {
-          // '/api/read-stats': readStats.data,
-          '/api/github?type=personal': githubUserPersonal?.data,
-        },
-      },
-    };
-  } catch (error) {
-    console.error('Error fetching data for stats page:', error);
-    // Return empty fallback data if API calls fail during build
-    return {
-      props: {
-        fallback: {},
-      },
-    };
-  }
+  return {
+    props: {
+      fallback: {},
+    },
+  };
 };
