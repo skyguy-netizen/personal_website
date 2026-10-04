@@ -1,4 +1,4 @@
-import { GetServerSideProps } from 'next';
+import { GetStaticProps } from 'next';
 import { getProviders, signIn } from 'next-auth/react';
 import { FcGoogle } from 'react-icons/fc';
 import { FaGithub } from 'react-icons/fa';
@@ -65,11 +65,12 @@ const SignInPage = ({ providers }: SignInProps) => {
   );
 };
 
-export const getServerSideProps: GetServerSideProps = async () => {
-  const providers = await getProviders();
+export const getStaticProps: GetStaticProps = async () => {
+  // Note: In static export, NextAuth won't work
+  // This is just to make the page build successfully
   return {
     props: {
-      providers: providers || {},
+      providers: {},
     },
   };
 };

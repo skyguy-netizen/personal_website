@@ -1,6 +1,7 @@
 import Breakline from '@/common/components/elements/Breakline';
 
 import Introduction from './Introduction';
+import NewsSection from './NewsSection';
 // import ResearchSection from './ResearchSection';
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     <>
       <Introduction />
       <Breakline className='mb-7 mt-8' />
+      <NewsSection />
       {/* <ResearchSection /> */}
       {/* <Breakline className='my-8' /> */}
     </>

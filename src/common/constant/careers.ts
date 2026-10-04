@@ -9,8 +9,8 @@ export const CAREERS: CareerProps[] = [
     location: 'Riverside, California, USA',
     location_type: 'On-site',
     type: 'Part-time',
-    start_date: '2024-01',
-    end_date: null,
+    start_date: '2023-09',
+    end_date: '2025-06',
     industry: 'Bioinformatics',
     link: null,
     responsibilities: [

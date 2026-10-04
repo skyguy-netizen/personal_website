@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { MdVerified as VerifiedIcon } from 'react-icons/md';
 
 import Image from '../elements/Image';
+import ThemeToggleButton from '../elements/ThemeToggleButton';
 
 interface ProfileHeaderProps {
   expandMenu: boolean;
@@ -27,12 +28,13 @@ const ProfileHeader = ({ expandMenu, imageSize }: ProfileHeaderProps) => {
         className='rotate-3 dark:border-neutral-600 lg:hover:scale-105'
       />
       <>
-        <div className='mt-1 flex items-center gap-2 lg:mt-4'>
+        <div className='mt-1 flex items-center gap-3 lg:mt-4'>
           <Link href='/' passHref>
             <h2 className='flex-grow  text-lg font-medium lg:text-xl'>
               Aarav Sane
             </h2>
           </Link>
+          <ThemeToggleButton />
           {/* <VerifiedIcon size={18} className='text-blue-400' /> */}
         </div>
         {/* <div className='hidden text-[15px] text-neutral-600 transition-all duration-300 hover:text-neutral-700 dark:text-neutral-500 dark:hover:text-neutral-400 lg:flex'>

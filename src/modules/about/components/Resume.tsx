@@ -5,7 +5,7 @@ import GoogleDocsEmbed from '@/common/components/elements/GoogleDocsEmbed';
 
 const Resume = () => {
   const RESUME_URL =
-    'https://drive.google.com/file/d/1W-MgZpIIQEep7CJYw-rbkQhyCuK6mJa4/view';
+    'https://drive.google.com/file/d/1PdLj02v8hsUgEC6qC6gYDe7cQ_nPWX0t/view';
 
   return (
     <div className='space-y-5'>
@@ -21,7 +21,7 @@ const Resume = () => {
       </Link>
 
       <iframe
-        src='https://drive.google.com/file/d/1W-MgZpIIQEep7CJYw-rbkQhyCuK6mJa4/preview'
+        src='https://drive.google.com/file/d/1PdLj02v8hsUgEC6qC6gYDe7cQ_nPWX0t/preview'
         width='100%'
         height='1000'
         allow='autoplay'

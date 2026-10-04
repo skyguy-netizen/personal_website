@@ -2,6 +2,25 @@ import { CareerProps } from '../types/careers';
 
 export const VOLUNTEERING: CareerProps[] = [
   {
+    position: 'Treasurer',
+    company: 'Computer Science Graduate Student Association, Purdue University',
+    company_legal_name: null,
+    logo: '/images/gsb_logo.png',
+    location: 'West Lafayette, Indiana, USA',
+    location_type: null,
+    type: null,
+    start_date: '2026-05',
+    end_date: null,
+    industry: 'Professional Association',
+    link: null,
+    responsibilities: [
+      'Part of the executive board',
+      'Work with department and exec board for betterment of Computer Science graduate students',
+      'Handle finances/reimbursements etc. for the association',
+    ],
+    skills: [],
+  },
+  {
     position: 'Captain',
     company: 'UCR Mens Tennis',
     company_legal_name: null,

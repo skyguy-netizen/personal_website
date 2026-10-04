@@ -25,19 +25,22 @@ const CareerCard = ({
   const [isShowResponsibility, setIsShowResponsibility] =
     useState<boolean>(false);
 
-  const startDateFormatted = format(new Date(start_date), 'MMM yyyy');
+  const parseDate = (date: string | number) =>
+    typeof date === 'string' ? new Date(`${date}-01T00:00:00`) : new Date(date);
+
+  const startDateFormatted = format(parseDate(start_date), 'MMM yyyy');
   const endDateFormatted = end_date
-    ? format(new Date(end_date), 'MMM yyyy')
+    ? format(parseDate(end_date), 'MMM yyyy')
     : 'Present';
 
   const durationYears = differenceInYears(
-    new Date(end_date || Date.now()),
-    new Date(start_date),
+    end_date ? parseDate(end_date) : Date.now(),
+    parseDate(start_date),
   );
   const durationMonths =
     (differenceInMonths(
-      new Date(end_date || Date.now()),
-      new Date(start_date),
+      end_date ? parseDate(end_date) : Date.now(),
+      parseDate(start_date),
     ) %
       12) +
     1;
@@ -100,14 +103,22 @@ const CareerCard = ({
               <span className='text-neutral-500 dark:text-neutral-500'>
                 {durationText}
               </span>
-              <span className='hidden text-neutral-300 dark:text-neutral-700 lg:block'>
-                •
-              </span>
-              <span>{type}</span>
-              <span className='hidden text-neutral-300 dark:text-neutral-700 lg:block'>
-                •
-              </span>
-              <span>{location_type}</span>
+              {type && (
+                <>
+                  <span className='hidden text-neutral-300 dark:text-neutral-700 lg:block'>
+                    •
+                  </span>
+                  <span>{type}</span>
+                </>
+              )}
+              {location_type && (
+                <>
+                  <span className='hidden text-neutral-300 dark:text-neutral-700 lg:block'>
+                    •
+                  </span>
+                  <span>{location_type}</span>
+                </>
+              )}
             </div>
           </div>
         </div>
