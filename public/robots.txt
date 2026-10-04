@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://skywalker8108.tattooine
+Host: https://www.cs.purdue.edu/homes/sane0
 
 # Sitemaps
-Sitemap: https://skywalker8108.tattooine/sitemap.xml
+Sitemap: https://www.cs.purdue.edu/homes/sane0/sitemap.xml
