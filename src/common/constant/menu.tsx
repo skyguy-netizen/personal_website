@@ -19,6 +19,7 @@ import {
 import {
   HiOutlineAcademicCap as EducationIcon,
   HiOutlineBriefcase as CareerIcon,
+  HiOutlineBookOpen as PublicationsIcon,
   HiOutlineDocumentText as ResumeIcon,
 } from 'react-icons/hi';
 
@@ -49,6 +50,15 @@ export const MENU_ITEMS: MenuItemProps[] = [
     type: 'Pages',
   },
   {
+    title: 'Publications',
+    href: '/publications',
+    icon: <PublicationsIcon size={iconSize} />,
+    isShow: true,
+    isExternal: false,
+    eventName: 'Pages: Publications',
+    type: 'Pages',
+  },
+  {
     title: 'Career',
     href: '/career',
     icon: <CareerIcon size={iconSize} />,
@@ -64,6 +74,15 @@ export const MENU_ITEMS: MenuItemProps[] = [
     isShow: true,
     isExternal: false,
     eventName: 'Pages: Volunteering',
+    type: 'Pages',
+  },
+  {
+    title: 'Hobbies',
+    href: '/hobbies',
+    icon: <PhotoIcon size={iconSize} />,
+    isShow: true,
+    isExternal: false,
+    eventName: 'Pages: Hobbies',
     type: 'Pages',
   },
   {

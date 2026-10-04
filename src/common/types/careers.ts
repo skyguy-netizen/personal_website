@@ -4,8 +4,8 @@ export interface CareerProps {
   company_legal_name?: string | null;
   logo: string | null;
   location: string | null;
-  location_type: string;
-  type: string | null;
+  location_type?: string | null;
+  type?: string | null;
   start_date: string;
   end_date: string | null;
   industry: string;

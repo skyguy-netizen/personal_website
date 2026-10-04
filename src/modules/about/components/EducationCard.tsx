@@ -15,7 +15,7 @@ const EducationCard = ({
   link,
 }: EducationProps) => {
   return (
-    <Card className='flex items-center gap-5 border border-neutral-300 px-6 py-4 dark:border-neutral-900'>
+    <Card className='flex flex-col gap-4 border border-neutral-300 px-6 py-4 dark:border-neutral-900 sm:flex-row sm:items-center sm:gap-5'>
       {logo ? (
         <Image src={logo} width={55} height={55} alt={school} />
       ) : (

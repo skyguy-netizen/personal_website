@@ -47,7 +47,6 @@ export const getStaticProps: GetStaticProps<ImagesPageProps> = async () => {
     props: {
       imagePaths,
     },
-    revalidate: 60, // ISR: rebuild every minute if files change
   };
 };
 

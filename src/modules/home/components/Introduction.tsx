@@ -12,21 +12,21 @@ const Introduction = () => {
         I'm currently a Computer Science Doctorate Student at Purdue University
         under the guidance of{' '}
         <a
-          href='https://www.cs.purdue.edu/homes/ayg/'
-          target='_blank'
-          rel='noopener noreferrer'
-          className='text-blue-600 hover:underline dark:text-blue-400'
-        >
-          Dr. Ananth Grama
-        </a>{' '}
-        and{' '}
-        <a
           href='https://www.rohanpaleja.com/'
           target='_blank'
           rel='noopener noreferrer'
           className='text-blue-600 hover:underline dark:text-blue-400'
         >
           Dr. Rohan Paleja
+        </a>{' '}
+        and{' '}
+        <a
+          href='https://www.cs.purdue.edu/homes/ayg/'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='text-blue-600 hover:underline dark:text-blue-400'
+        >
+          Dr. Ananth Grama
         </a>
         , with an interest in Multi Agent Reinforcement Learning and ML/DL in
         Biosciences. I previously completed my Bachelor of Science degree from

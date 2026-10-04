@@ -19,12 +19,21 @@ const CreditButton = () => {
           <p>
             Website template by{' '}
             <a
-              href='https://github.com/aulianza'
+              href='https://github.com/aulianza/aulianza.id'
               target='_blank'
               rel='noopener noreferrer'
               className='text-blue-500 hover:underline'
             >
               @aulianza
+            </a>{' '}
+            — check out work{' '}
+            <a
+              href='https://aulianza.com/portfolio'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-blue-500 hover:underline'
+            >
+              here
             </a>
           </p>
         </div>
